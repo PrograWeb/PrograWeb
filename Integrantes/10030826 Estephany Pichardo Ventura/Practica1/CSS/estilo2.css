@@ -1,0 +1,159 @@
+html ,
+button,
+input,
+selct,
+textarea{
+	color:#ff1CAE;
+	}
+	
+	body{
+		font-size:1em;
+		line-height:1.4;
+		font: 16px  Candara;
+	}
+	.container {
+		width:90%;
+		margin:0 5%
+		/* color de sitio*/}
+		
+		.header-container {
+			border-bottom: 20px solid #7F00FF;
+		}
+		.footer-container,
+		.main aside {
+			border-top: 20px solid #7F00FF;
+		}
+		.title{
+			color: white;
+		}
+		
+		/*Menu*/
+		nav ul{
+			margin: 0;
+			padding: 0;
+		}
+		nav a {
+		
+			/*Dysplay block muestra el nom*/
+		display: block;
+		margin-bottom: 10px;
+		padding: 15px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		background: #7F00FF;
+		}
+		
+		nav a:hover,
+		van a:visited{
+		
+			color:white;
+			}
+			
+		nav a:hover{
+			text-decoration: underline;
+			}
+			
+		nav li {
+			list-style: none;
+		}
+		
+		.main{
+			padding:30px 0;
+		}
+		
+		.main{
+			font-size: 2em;
+		}
+		
+		.main aside{
+			color: whitw;
+			padding: 0px 5% 10px;
+		}
+		
+		.footer-container footer{
+			color: white;
+		}
+		
+		.clearfix:before,
+		.clearfix:after{
+			content: " ";
+			display: table;
+			
+		}
+		.clearfix:after{
+			clear: both;
+		}
+		
+		@media only screen and (min-width: 480px) {
+		.title {
+		font-family: 'Kavoon', cursive;
+		}
+		
+		/* aplica pantallas nas anchas de 480px*/
+		
+		h1{
+		color:red;
+		}
+		
+		nav a{
+		float:left;
+		width: 27%;
+		margin:o 1.7%;
+		padding:25px 2%;
+		margin-bottom: 0;
+		}
+		
+		nav li:first-child a{
+			margin-right:0;
+		}
+		
+		nav ul li {
+		display: inline;
+		}
+		}
+		
+		@media only screen and (min-width:780px){
+			header-container,
+			
+			.main aside {
+				-webkit-box-shadow: 0 5px 10 px #007ff;
+				   -moz-box-shadow: 0 5px 10 px #007ff;
+				      	box-shadow: 0 5px 10 px #007ff;
+						
+						
+			}
+			.title{
+				float:left;
+		}
+		nav{
+			float:right;
+			width:38%
+			}
+			.main article {
+				float:right;
+				width:57%;
+				
+
+    -moz-box-shadow:inset -7px -42px 31px #8517eb;
+    -webkit-box-shadow:inset -7px -42px 31px #8517eb;
+    box-shadow:inset -7px -42px 31px #8517eb;
+
+
+		}
+			.main aside {
+				float:left;
+				width:28%
+				
+				
+
+    -moz-box-shadow:inset -7px -42px 31px #8517eb;
+    -webkit-box-shadow:inset -7px -42px 31px #8517eb;
+    box-shadow:inset -7px -42px 31px #8517eb;
+
+
+				}
+			
+		}
+		

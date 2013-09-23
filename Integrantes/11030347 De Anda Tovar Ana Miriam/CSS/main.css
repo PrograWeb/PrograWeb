@@ -1,0 +1,141 @@
+html ,
+button,
+input,
+selct,
+textarea{
+	color:#ff1CAE;
+	}
+	
+	body{
+		font-size:1em;
+		line-height:1.4;
+		font: 16px  Candara;
+	}
+	.container {
+		width:90%;
+		margin:0 5%
+		/* color de sitio*/}
+		
+		.header-container {
+			border-bottom: 20px solid #7F00FF;
+		}
+		.footer-container,
+		.main aside {
+			border-top: 20px solid #7F00FF;
+		}
+		.title{
+			color: white;
+		}
+		
+		/*Menu*/
+		nav ul{
+			margin: 0;
+			padding: 0;
+		}
+		nav a {
+		
+			/*Dysplay block muestra el nom*/
+		display: block;
+		margin-bottom: 10px;
+		padding: 15px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		background: #7F00FF;
+		}
+		
+		nav a:hover,
+		van a:visited{
+		
+			color:white;
+			}
+			
+		nav a:hover{
+			text-decoration: underline;
+			}
+			
+		nav li {
+			list-style: none;
+		}
+		
+		.main{
+			padding:30px 0;
+		}
+		
+		.main{
+			font-size: 2em;
+		}
+		
+		.main aside{
+			color: whitw;
+			padding: 0px 5% 10px;
+		}
+		
+		.footer-container footer{
+			color: white;
+		}
+		
+		.clearfix:before,
+		.clearfix:after{
+			content: " ";
+			display: table;
+		}
+		
+		@media only screen and (min-width: 480px) {
+		
+		/* aplica pantallas nas anchas de 480px*/
+		
+		h1{
+		color:red;
+		}
+		
+		nav a{
+		float:left;
+		width: 27%;
+		margin:o 1.7%;
+		padding:25px 2%;
+		margin-bottom: 0;
+		}
+		
+		nav li:first-child a{
+			margin-right:0;
+		}
+		
+		nav ul li {
+		display: inline;
+		}
+		}
+		
+		@media only screen and (min-width:780px){
+			header-container,
+			
+			.main aside {
+				-webkit-box-shadow: 0 5px 10 px #007ff;
+				   -moz-box-shadow: 0 5px 10 px #007ff;
+				      	box-shadow: 0 5px 10 px #007ff;
+						
+						-moz-box-shadow:inset 10px 10px 5px #000000;
+-webkit-box-shadow:inset 10px 10px 5px #000000;
+box-shadow:inset 10px 10px 5px #000000;
+			}
+		}
+		/*
+		
+		forma1 
+		margin:3px  6px;
+		
+		forma2
+		margin-left: 6px;
+		margin-right: 6px;
+		margin-top: 3px;
+		margin-bottom: 3px;
+		
+		
+		/*forma
+		margin:3px;
+		
+		/*forma4
+		margin:3px 6px 3px 6px;
+        */		
+	
