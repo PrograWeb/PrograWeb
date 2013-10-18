@@ -46,9 +46,10 @@
 			$( "#fecha-nacimiento" ).datepicker();
 			$("select").selectpicker({style: 'btn-hg btn-primary', menuStyle:'dropdown-inverse'});
 			
+			$("#btn1").slideUp(slide).delay(delay).fadeIn(fade);
+
 			$("#btn1").click(function(){
 				//$("#resultado").toggle('slow');
-				$(this).slideUp(600).delay(900).fadeIn(800);
 			});
 		});
 		
@@ -61,60 +62,18 @@
 		
 		<button id="btn1" class="btn btn-default">resultado</button>
 		
-		<div id="resultado">
-			
-		</div>
+		<div id="resultado"></div>
 		
 		<form action="" method="get">
-			<label for="nombre">Nombre:</label>
-			<input type="text" id="nombre" name="nombre" class="form-control" required autofocus />
+			<label for="slide">slide:</label>
+			<input type="text" id="slide" name="slide" class="form-control" required autofocus />
 			
-			<label for="Ap">Apellido Paterno:</label>
-			<input type="text" id="Ap" name="Apellido_paterno" class="form-control" required />
+			<label for="delay">delay:</label>
+			<input type="text" id="delay" name="delay" class="form-control" required />
 			
-			<label for="Am">Apellido Materno:</label>
-			<input type="text" id="Am" name="Apellido_materno" class="form-control" required />
+			<label for="fade">fade:</label>
+			<input type="text" id="fade" name="fade" class="form-control" required />
 			
-			<label for="mail">E-mail:</label>
-			<input type="text" id="mail" name="Email" class="form-control" required/>
-			
-			<label for="fecha-nacimiento">Fecha de nacimiento:</label>
-			<input type="date" id="fecha-nacimiento" name="fecha-nacimiento" class="form-control" required/>
-			
-			<label for="genero">Genero:</label><br>
-			<label class="radio">femenino:
-				<input type="radio" name="genero" value="F" data-toggle="radio">
-			</label>
-			<label class="radio">Masculino: 
-				<input type="radio" name="genero" value="M" data-toggle="radio">			
-			</label>
-			<br>
-			<label for="comentarios">Comentarios:</label>
-			<textarea name="comentarios" id="comentarios">
-			</textarea>
-			
-			<label class="checkbox" for="checkbox1">
-			  <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
-			  Checkbox1
-			</label>			
-			<label class="checkbox" for="checkbox2">
-			  <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox">
-			  Checkbox2
-			</label>
-			<label class="checkbox" for="checkbox3">
-			  <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox">
-			  Checkbox3
-			</label>
-
-			<select name="estados">
-				<option value="001">guanajuato</option>
-				<option value="002">mexico</option>
-				<option value="003">jalisco</option>
-				<option value="004">etc...</option>
-			</select>
-			
-			<br>
-			<br>
 			<input type="submit" value="Enviar" class="btn btn-hg btn-primary"/>
 		</form>
 	</div>
