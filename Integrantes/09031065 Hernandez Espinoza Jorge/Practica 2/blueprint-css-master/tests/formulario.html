@@ -42,10 +42,13 @@
 			}
 			$("#resultado").hide();
 			$("#resultado").html(html);
-			$("#resultado").show('slow');
+			//$("#resultado").show('slow');
 			$( "#fecha-nacimiento" ).datepicker();
 			$("select").selectpicker({style: 'btn-hg btn-primary', menuStyle:'dropdown-inverse'});
 			
+			$("#btn1").click(function(){
+				$("#resultado").show('slow');
+			});
 		});
 		
 	</script>
@@ -54,6 +57,8 @@
   <body>
 
 	<div class="container">
+		
+		<button id="btn1">resultado</button>
 		
 		<div id="resultado">
 			
